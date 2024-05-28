@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <!-- <script defer src="./js/index.js"></script> -->
+</head>
+<body>
+    <button onclick="cliquerBoutton()">Click</button>
+    <button id="btm">Cliquer Encore</button>
+    <p id="paragraphe">text</p>
+    <script>
+        function cliquerBoutton () {
+            alert('Button Clicked')
+        }
+
+        const btn = document.getElementById("btm").onclick = cliquerBoutton
+        // btn.onclick = function() {
+        //     console.log("le bouton cliquer encore a été cliquer");
+        // }
+        // let paragraphe = document.getElementById("paragraphe")
+        // paragraphe.addEventListener("click", function(){
+        //     paragraphe.textContent = "paragraphe"
+        //     paragraphe.style.color = "green"
+        // })
+
+        document.getElementById("paragraphe").addEventListener("click", paragrapheStyle)
+        
+        function paragrapheStyle (){
+            document.getElementById("paragraphe").textContent = "paragraphe"
+            document.getElementById("paragraphe").style.color = "green"
+        }
+        //.addEventListener prend en compte 2 paramettre la proprieté et la function
+    </script>
+</body>
+</html>
