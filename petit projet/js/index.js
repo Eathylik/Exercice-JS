@@ -2,8 +2,6 @@ const ul = document.querySelector("#liste")
 const btn = document.querySelector("#btn")
 const input = document.querySelector("#input")
 
-save();
-
 btn.addEventListener("click", addToDoList)
 
 function addToDoList () {
@@ -14,12 +12,12 @@ function addToDoList () {
     } else {
         listItem.textContent = text;
         ul.appendChild(listItem)
-        save()
     }
     input.value = "";
     input.focus()
+    save(listItem)
 }
 
-function save (){
-    localStorage.setItem("data", ul.textContent)
+function save (valeur){
+    localStorage.setItem("data", valeur)
 }
