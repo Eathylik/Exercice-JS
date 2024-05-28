@@ -17,6 +17,11 @@ function addToDoList () {
         listItem.appendChild(supp)
         supp.classList.add("btnSupp")
         supp.style.marginLeft = ("3%")
+        listItem.style.marginTop = ("3%")
+        supp.style.color =("white")
+        supp.style.backgroundColor = ("red")
+        supp.style.border = ("none")
+        supp.style.borderRadius = ("5%")
     }
     input.value = "";
     input.focus()
