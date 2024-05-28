@@ -12,11 +12,27 @@ function addToDoList () {
     } else {
         listItem.textContent = text;
         ul.appendChild(listItem)
+        const supp = document.createElement("button")
+        supp.textContent = "supp"
+        listItem.appendChild(supp)
+        supp.classList.add("btnSupp")
+        supp.style.marginLeft = ("3%")
     }
     input.value = "";
     input.focus()
-    save(listItem)
+    save()
+    supprimer()
 }
+
+function supprimer (){
+    const cancel = document.querySelectorAll(".btnSupp")
+    cancel.forEach (function(btn){
+        btn.addEventListener("click", function(){
+            btn.parentElement.remove();
+        })
+    })
+
+    }
 
 function save (valeur){
     localStorage.setItem("data", valeur)
