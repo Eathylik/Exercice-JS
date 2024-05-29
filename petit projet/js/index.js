@@ -23,6 +23,7 @@ function addToDoList () {
         supp.style.border = ("none")
         supp.style.borderRadius = ("5%")
     }
+    localStorage.setItem("listItem", "reponse")
     input.value = "";
     input.focus()
     save()
@@ -34,11 +35,17 @@ function supprimer (){
     cancel.forEach (function(btn){
         btn.addEventListener("click", function(){
             btn.parentElement.remove();
+            localStorage.removeItem("listItem")
         })
+
     })
 
     }
 
-function save (valeur){
-    localStorage.setItem("data", valeur)
+function save (){
+    if(input.value == ""){
+        localStorage.setItem("listItem", "reponse")
+    } else if (input.value = supprimer){
+        localStorage.clear("listItem")
+    }
 }
