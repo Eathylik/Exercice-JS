@@ -23,6 +23,7 @@ function addToDoList () {
         supp.style.marginLeft = ("3%")
         listItem.style.marginTop = ("3%")
         tableau.push(text)
+        localStorage.setItem(text)
         console.log(tableau);
     }
     
@@ -36,6 +37,21 @@ function recupererTache(){
     return tache
 }
 
+function afficherTache () {
+    const tasks = recupererTache()
+    console.log(tasks);
+    // for(let task of tasks) {
+    //     console.log(tasks);
+    // }
+    // for (let i = 0; i < tasks.length; i++){
+    //     console.log(tasks[i]);
+    // }
+    // tasks.forEach(task => console.log(task));
+    // tasks.map(task => console.log(task));
+}
+
+console.log(recupererTache());
+
 function supprimer (){
     const cancel = document.querySelectorAll(".btnSupp")
     cancel.forEach (function(btn){
@@ -48,4 +64,3 @@ function supprimer (){
     })
 
     }
-
