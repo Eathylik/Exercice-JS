@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+    <script defer src="./js/index.js"></script>
+</head>
+<body>
+    <h1>LocalStorage</h1>
+    <script>
+        // localStorage.setItem("prenom", "Louis")
+        // localStorage.setItem("nom", "Jacinto")
+        // console.log(localStorage.getItem("nom"));
+        // localStorage.removeItem("nom")
+        // localStorage.clear()
+        let maListe = ["pomme", "poire", "abricot", "ananas"]
+        // console.log(maListe[maListe.length -1]);
+        console.log(maListe);
+        localStorage.getItem("array", maListe)
+        console.log(localStorage.getItem("array"));
+        localStorage.setItem("newArray", JSON.stringify(maListe))//transforme en chaine de caratere
+        let newList = localStorage.getItem("newArray");
+        console.log(JSON.parse(newList));//transforme en liste
+    </script>
+</body>
+</html>
