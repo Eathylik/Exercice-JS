@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LocalStorage</title>
-    <script defer src="./js/index.js"></script>
 </head>
 <body>
     <h1>LocalStorage</h1>
@@ -22,6 +21,28 @@
         localStorage.setItem("newArray", JSON.stringify(maListe))//transforme en chaine de caratere
         let newList = localStorage.getItem("newArray");
         console.log(JSON.parse(newList));//transforme en liste
+        for(let item of maListe) { //permet de parcourir une liste
+            console.log(item);
+        }
+
+        for(let i = 0; i < maListe.length; i++) {
+            console.log(maListe[i]);
+        }
+
+        console.log(maListe.sort());//permet de trier la liste en ordre croissant
+        console.log(maListe.reverse());//permet de trier par ordre decroissant
+        console.log(maListe.indexOf("ananas"));
+        let index = maListe.indexOf("ananas");
+        console.log(maListe.splice(index,1));
+        console.log(maListe);
+        console.log(maListe.find(element => element === "poire"))
+        if (maListe.find(element => element === "poire")) {
+            console.log("l'élément existe déjà");
+        } else {
+            console.log("Ajout d'un nouvelle élément");
+        }
+
+
     </script>
 </body>
 </html>
