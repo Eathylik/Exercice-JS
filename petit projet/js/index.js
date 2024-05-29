@@ -42,10 +42,3 @@ function supprimer (){
 
     }
 
-function save (){
-    if(input.value == ""){
-        localStorage.setItem("listItem", "reponse")
-    } else if (input.value = supprimer){
-        localStorage.clear("listItem")
-    }
-}
