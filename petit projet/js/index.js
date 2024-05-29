@@ -17,18 +17,23 @@ function addToDoList () {
         listItem.textContent = text;
         ul.appendChild(listItem)
         const supp = document.createElement("button")
-        tableau.push(text)
         supp.textContent = "supp"
         listItem.appendChild(supp)
         supp.classList.add("btnSupp")
         supp.style.marginLeft = ("3%")
         listItem.style.marginTop = ("3%")
+        tableau.push(text)
         console.log(tableau);
     }
     
     input.value = "";
     input.focus()
     supprimer()
+}
+
+function recupererTache(){
+    let tache = JSON.parse(localStorage.getItem("tache")) || []
+    return tache
 }
 
 function supprimer (){
