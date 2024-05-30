@@ -1,0 +1,9 @@
+#task, #add {
+    padding: 10PX;
+    font-size: 20PX;
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(124, 38, 204);
+}

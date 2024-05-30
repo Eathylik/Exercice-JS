@@ -25,5 +25,15 @@ console.log(array.indexOf(4));
 let index = array.indexOf(4);
 
 //supprimer un élément du tableau
-array.splice(index);
-console.log(array);
+// array.splice(index,1);
+// console.log(array);
+
+for(let i of array) {
+    console.log(i*i);//multiplier
+    console.log(i);
+    console.log(i/2);//diviser
+}
+
+for(let i = 0; i < array.length; i++){
+    console.log(array[2]);
+}
