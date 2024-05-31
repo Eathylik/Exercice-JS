@@ -68,8 +68,10 @@
     background:lightgrey;
   }
   
-  input{
+  p{
     width:160px;
+    border: 1px solid;
+    background-color: white;
   }
   
   .principale{
@@ -77,8 +79,8 @@
     border-radius: 3%;
     width:250px;
     padding:10px;
-    /* background: rgb(244,20,4); */
-    /* background: linear-gradient(304deg, rgba(244,20,4,1) 9%, rgba(247,110,1,1) 18%, rgba(213,230,3,1) 28%, rgba(89,217,4,1) 37%, rgba(0,255,222,1) 49%, rgba(0,52,246,1) 60%, rgba(105,8,230,1) 73%, rgba(216,5,120,1) 83%, rgba(255,0,0,1) 93%); */
-    background: rgb(244,20,4);
-background: radial-gradient(circle, rgba(244,20,4,1) 9%, rgba(247,110,1,1) 18%, rgba(213,230,3,1) 28%, rgba(89,217,4,1) 37%, rgba(0,255,222,1) 49%, rgba(0,52,246,1) 60%, rgba(105,8,230,1) 73%, rgba(216,5,120,1) 83%, rgba(255,0,0,1) 93%);
+    /* background: rgb(34,193,195); */
+    /* background: linear-gradient(128deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+    background: rgb(34,193,195);
+background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(0,252,255,0.14730878186968843) 68%);
   }

@@ -13,31 +13,31 @@
     <div class="principale">
         <div class="ligne1">
             <button id="effacer">C</button>
-            <input id="input" type="text">
+            <p id="input" type="text"></p>
         </div>
         <div class="ligne2">
-            <button id="sept">7</button>
-            <button id="huit">8</button>
-            <button id="neuf">9</button>
-            <button id="plus">+</button>
+            <button id="sept" onclick="add('7')">7</button>
+            <button id="huit" onclick="add('8')">8</button>
+            <button id="neuf" onclick="add('9')">9</button>
+            <button id="plus" onclick="add('+')">+</button>
         </div>
         <div class="ligne3">
-            <button id="quatre">4</button>
-            <button id="cinq">5</button>
-            <button id="six">6</button>
-            <button id="moins">-</button>
+            <button id="quatre" onclick="add('4')">4</button>
+            <button id="cinq" onclick="add('5')">5</button>
+            <button id="six" onclick="add('6')">6</button>
+            <button id="moins" onclick="add('-')">-</button>
         </div>
         <div class="ligne4">
-            <button id="un">1</button>
-            <button id="deux">2</button>
-            <button id="trois">3</button>
-            <button id="division">/</button>
+            <button id="un" onclick="add('1')">1</button>
+            <button id="deux" onclick="add('2')">2</button>
+            <button id="trois" onclick="add('3')">3</button>
+            <button id="division" onclick="add('/')">/</button>
         </div>
         <div class="ligne5">
-            <button id="point">.</button>
-            <button id="zero">0</button>
-            <button id="egal">=</button>
-            <button id="multiplication">*</button>
+            <button id="point" onclick="add('.')">.</button>
+            <button id="zero" onclick="add('0')">0</button>
+            <button id="egal" onclick="add('=')">=</button>
+            <button id="multiplication" onclick="add('*')">*</button>
         </div>
     </div>
 </body>
