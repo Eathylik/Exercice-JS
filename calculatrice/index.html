@@ -12,8 +12,8 @@
 <body>
     <div class="principale">
         <div class="ligne1">
-            <button id="effacer">C</button>
-            <p id="input" type="text"></p>
+            <button id="effacer" onclick="sup()">C</button>
+            <p id="paragraphe" type="text"></p>
         </div>
         <div class="ligne2">
             <button id="sept" onclick="add('7')">7</button>
@@ -36,7 +36,7 @@
         <div class="ligne5">
             <button id="point" onclick="add('.')">.</button>
             <button id="zero" onclick="add('0')">0</button>
-            <button id="egal">=</button>
+            <button id="egal" onclick="calculate ()">=</button>
             <button id="multiplication" onclick="add('*')">*</button>
         </div>
     </div>
