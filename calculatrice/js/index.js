@@ -2,6 +2,7 @@ const paragraphe = document.querySelector("#paragraphe")
 const clear = document.querySelector("#éffacé")
 const egal = document.querySelector("#egal")
 const btn = document.querySelectorAll("button")
+const array = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "/", "*", "-", "c"]
 
 function add (value) {
     paragraphe.textContent += value
@@ -22,7 +23,7 @@ function calculate () {
 }
 
 document.addEventListener("keydown", (event) => {
-    if (document.isComposing || event === 48) {
-      return;
+    if (array.includes(event.key)) {
+        paragraphe.textContent += event.key
     }
   });
