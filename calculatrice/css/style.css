@@ -1,0 +1,8 @@
+#ligne1, #ligne2, #ligne3, #ligne4 {
+    display: flex;
+    padding: 10%;
+}
+
+div {
+    padding: 10%;
+}
