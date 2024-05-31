@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="./js/index.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/index.js"></script>
 </head>
+
 <body>
-    <section id="container">
-        <article id="ligne1">
-            <div id="nub1">1</div>
-            <div id="nub2">2</div>
-            <div id="nub3">3</div>
-            <div id="nub+">+</div>
-        </article>
-        <article id="ligne2">
-            <div id="nub4">4</div>
-            <div id="nub5">5</div>
-            <div id="nub6">6</div>
-            <div id="nub-">-</div>
-        </article>
-        <article id="ligne3">
-            <div id="nub7">7</div>
-            <div id="nub8">8</div>
-            <div id="nub9">9</div>
-            <div id="nubMultiple">*</div>
-        </article>
-        <article id="ligne4">
-            <div id="nubEgal">=</div>
-            <div id="nub0">0</div>
-            <div id="nubCE">CE</div>
-            <div id="nubDiv">/</div>
-        </article>
-    </section>
+    <div class="principale">
+        <div class="ligne1">
+            <button id="effacer">C</button>
+            <input id="input" type="text">
+        </div>
+        <div class="ligne2">
+            <button id="sept">7</button>
+            <button id="huit">8</button>
+            <button id="neuf">9</button>
+            <button id="plus">+</button>
+        </div>
+        <div class="ligne3">
+            <button id="quatre">4</button>
+            <button id="cinq">5</button>
+            <button id="six">6</button>
+            <button id="moins">-</button>
+        </div>
+        <div class="ligne4">
+            <button id="un">1</button>
+            <button id="deux">2</button>
+            <button id="trois">3</button>
+            <button id="division">/</button>
+        </div>
+        <div class="ligne5">
+            <button id="point">.</button>
+            <button id="zero">0</button>
+            <button id="egal">=</button>
+            <button id="multiplication">*</button>
+        </div>
+    </div>
 </body>
+
 </html>

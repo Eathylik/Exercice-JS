@@ -1,15 +1,82 @@
-#ligne1, #ligne2, #ligne3, #ligne4 {
-    display: flex;
-    justify-content: center;
-}
-
-div {
-    padding: 5%;
-    border: 1px solid black;
-    margin: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
+.ligne1{
+    display:flex;
+  }
+  .ligne1 button{
+    background:lightgray;
+    height:50px;
+    width:50px;
+    text-align:center;
+    line-height:50px;
+    border-radius:20%;
+    margin-right:10px;
+    margin-left:8px;
+  }
+  
+  .ligne2{
+    display:flex;
+  }
+  .ligne2 button{
+    border:1px solid;
+    height:50px;
+    width:50px;
+    margin:7px;
+    border-radius:20%;
+    text-align:center;
+    line-height:50px;
+    background:lightgray;
+  }
+  
+  .ligne3{
+    display:flex;
+  }
+  .ligne3 button{
+    border:1px solid;
+    height:50px;
+    width:50px;
+    margin:7px;
+    border-radius:20%;
+    text-align:center;
+    line-height:50px;
+    background:lightgrey;
+  }
+  
+  .ligne4{
+    display:flex;
+  }
+  .ligne4 button{
+    border:1px solid;
+    height:50px;
+    width:50px;
+    margin:7px;
+    border-radius:20%;
+    text-align:center;
+    line-height:50px;
+    background:lightgrey;
+  }
+  
+  .ligne5{
+    display:flex;
+  }
+  .ligne5 button{
+    border:1px solid;
+    height:50px;
+    width:50px;
+    margin:7px;
+    border-radius:20%;
+    text-align:center;
+    line-height:50px;
+    background:lightgrey;
+  }
+  
+  input{
+    width:160px;
+  }
+  
+  .principale{
+    border:1px solid;
+    border-radius: 3%;
+    width:250px;
+    padding:10px;
+    background: rgb(244,20,4);
+    background: linear-gradient(304deg, rgba(244,20,4,1) 9%, rgba(247,110,1,1) 18%, rgba(213,230,3,1) 28%, rgba(89,217,4,1) 37%, rgba(0,255,222,1) 49%, rgba(0,52,246,1) 60%, rgba(105,8,230,1) 73%, rgba(216,5,120,1) 83%, rgba(255,0,0,1) 93%);
+  }
