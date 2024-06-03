@@ -42,13 +42,14 @@ document.addEventListener('keydown', function(event) {
         paragraphe.textContent = paragraphe.textContent.slice(0, -1) || "0"
     } else if (event.key === 'Enter'){
         paragraphe.textContent = calcul()
-    } else if (event.key === '+'){
+    } else if (event.key === '+' || event.key === '-' || event.key === '*' || event.key === '/'){
         add(event.key)
-    } else if (event.key === '-'){
-        add(event.key)
-    } else if (event.key === '*'){
-        add(event.key)
-    } else if (event.key === '/'){
-        add(event.key)
-    } 
+    }
+    // } else if (event.key === '-'){
+    //     add(event.key)
+    // } else if (event.key === '*'){
+    //     add(event.key)
+    // } else if (event.key === '/'){
+    //     add(event.key)
+    // } 
 });
