@@ -45,11 +45,4 @@ document.addEventListener('keydown', function(event) {
     } else if (event.key === '+' || event.key === '-' || event.key === '*' || event.key === '/'){
         add(event.key)
     }
-    // } else if (event.key === '-'){
-    //     add(event.key)
-    // } else if (event.key === '*'){
-    //     add(event.key)
-    // } else if (event.key === '/'){
-    //     add(event.key)
-    // } 
 });
