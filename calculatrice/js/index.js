@@ -22,8 +22,9 @@ function calculate () {
     }
 }
 
-document.addEventListener("keydown", (event) => {
-    if (array.includes(event.key)) {
-        paragraphe.textContent += event.key
-    }
-  });
+document.addEventListener("keydown", function (event){
+    const key = event.key;
+    if ((key >= "0" && key <= "9") || (key === "+" || key === "-" || key === "+" || key === "/"))add(key)
+    else if (key === "Enter") calculate();
+    else if (key === "Backspace") deleteLast();
+})
