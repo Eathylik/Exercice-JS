@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <p id="paragraphe" type="text"></p>
+        <div class="ligne1">
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button onclick="add('+')">+</button>
+        </div>
+        <div class="ligne2">
+            <button  onclick="add('4')">4</button>
+            <button  onclick="add('5')">5</button>
+            <button  onclick="add('6')">6</button>
+            <button  onclick="add('-')">-</button>
+        </div>
+        <div class="ligne3">
+            <button  onclick="add('7')">7</button>
+            <button  onclick="add('8')">8</button>
+            <button  onclick="add('9')">9</button>
+            <button  onclick="add('*')">*</button>
+        </div>
+        <div class="ligne4">
+            <button onclick="sup()">CE</button>
+            <button onclick="add('0')">0</button>
+            <button onclick="calcul()">=</button>
+            <button onclick="add('/')">/</button>
+        </div>
+    </div>
+</body>
+
+</html>
