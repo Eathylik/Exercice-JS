@@ -8,10 +8,5 @@ body {
     border-radius: 50%;
     background: rgb(184, 82, 126);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    box-shadow: 
-        -15px -15px -px royalblue inset,
-        -5px -5px -5px rgba(148,187,233,1),
-        5px 5px 5px rgb(184, 82, 126) inset,
-        5px 5px 5px rgba(238,174,202,1)
-
+    box-shadow: -15px -15px -px royalblue;
 }
