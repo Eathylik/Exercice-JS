@@ -4,6 +4,7 @@ console.log(fruits);
 fruits.push("orange")
 console.log(fruits);
 
+//supprime le Premier élément du tableau
 fruits.shift();
 console.log(fruits);
 
@@ -13,6 +14,7 @@ console.log(fruits.length);
 // console.log(fruits[1]);
 // console.log(fruits[2]);
 
+//Affiche les objets du tableau avec for OF
 for (let fruit of fruits){
     console.log(fruit);
 }
@@ -29,9 +31,11 @@ person.city = 'New-York'
 person.age = '31'
 console.log(person);
 
+//supprime un element ciblé de l'objet
 delete person.lastName
 console.log(person);
 
+//affiche les élément des objet avec for IN
 for (let items in person){
     console.log(`${items}: ${person[items]}`);
 }
