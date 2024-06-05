@@ -46,12 +46,28 @@
 ///////////////////////////////////////////////
             //Quatrieme Méthode
 
+// async function getData (){
+//     const reponse = await fetch('https://jsonplaceholder.typicode.com/posts')
+//     console.log(reponse);
+//     const data = await reponse.json();
+//     const filtreData = data.filter(post => post.userId === 3)
+//     console.log(filtreData);
+// }
+
+// getData()
+
+///////////////////////////////////////////////
+            //Fetch un Data.json
+
 async function getData (){
-    const reponse = await fetch('https://jsonplaceholder.typicode.com/posts')
-    console.log(reponse);
-    const data = await reponse.json();
-    const filtreData = data.filter(post => post.userId === 3)
-    console.log(filtreData);
+    const reponse = await fetch('./js/data.json')
+    const data = await reponse.json ()
+    console.log(data);
+    for (let items of data){
+        console.log(`${items}: ${data[items]}`);
+        console.log(items);
+    }
 }
 
 getData()
+
