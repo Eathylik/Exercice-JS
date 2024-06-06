@@ -1,11 +1,11 @@
-async function getData (){
-    const reponse = await fetch('./js/data.json')
-    console.log(reponse);
-    const data = await reponse.json();
-    console.log(data);
-}
+// async function getData (){
+//     const reponse = await fetch('./js/data.json')
+//     console.log(reponse);
+//     const data = await reponse.json();
+//     console.log(data);
+// }
 
-getData()
+// getData()
 
 async function user (){
     const reponse = await fetch('./js/data.json')
@@ -16,6 +16,7 @@ async function user (){
         console.log(items);
         createRow(items.id ,items.prenom, items.nom, items.email, items.role)
     }
+    return data;
 }
 
 user()
