@@ -1,0 +1,38 @@
+body {
+    background-color: #FFFFFF;
+background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+
+}
+
+div {
+    height: 80px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    background: rgb(230,131,0);
+background: linear-gradient(180deg, rgba(230,131,0,0.804359243697479) 0%, rgba(212,29,29,0.7959558823529411) 100%);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+td {
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+}
+
+table{
+    margin-left: 30%;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    border: 1px solid white;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 20px;
+}
