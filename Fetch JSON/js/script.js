@@ -66,8 +66,25 @@ async function getData (){
     for (let items of data){
         console.log(`${items}: ${data[items]}`);
         console.log(items);
+        createRow(items.id ,items.first_name, items.last_name, items.email)
     }
 }
 
 getData()
 
+const tbody = document.querySelector('tbody')
+
+function createRow (text1,text2,text3,text4){
+    const tr = document.createElement('tr')
+    tr.appendChild(createTD(text1))
+    tr.appendChild(createTD(text2))
+    tr.appendChild(createTD(text3))
+    tr.appendChild(createTD(text4))
+    tbody.appendChild(tr)
+}
+
+function createTD(text){
+    const td = document.createElement('td')
+    td.textContent = text;
+    return td
+}
