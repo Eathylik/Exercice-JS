@@ -1,7 +1,11 @@
-import user from "./module/getDatas.js";
+// import user from "./module/getDatas.js";
 
-import createTbody from "./module/createTbody.js";
+// import createTbody from "./module/createTbody.js";
 
-const base = await user();
+import getData from "./module/getTab.js";
 
-createTbody(base);
+// const base = await user();
+
+// createTbody(base);
+
+getData()
