@@ -28,7 +28,7 @@
                             tr.appendChild(email)
                             tr.appendChild(role)
                             document.querySelector('tbody').appendChild(tr)
-                            return post
+                            return tr
                         })
             
                     }
