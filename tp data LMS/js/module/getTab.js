@@ -10,7 +10,6 @@ import { storage, getStorage } from "./storage.js";
                     if (response.ok) {
                         const data = await response.json();
                         storage(data)
-                        console.log(data);
                         const setData = getStorage();
                         for (let items of setData){
                             console.log(items);

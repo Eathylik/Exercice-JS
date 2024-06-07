@@ -52,3 +52,11 @@ table{
     justify-content: center;
     font-family: "Bebas Neue", sans-serif;
 }
+
+.recherche {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+}
