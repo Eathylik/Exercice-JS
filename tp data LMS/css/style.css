@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    height: 100vh;
+}
+
 .navBar {
     height: 60px;
     color: black;

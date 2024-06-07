@@ -11,10 +11,10 @@ function createTbody (base){
     function createRow (text1,text2,text3,text4,text5){
         const tr = document.createElement('tr')
         tr.appendChild(createTd(text1))
+        tr.appendChild(createTd(text2))
         tr.appendChild(createTd(text3))
         tr.appendChild(createTd(text4))
         tr.appendChild(createTd(text5))
-        tr.appendChild(createTd(text2))
         return tr;
     }
     function createTd(text){
