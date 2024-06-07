@@ -1,5 +1,9 @@
+import { getStorage } from "./storage.js";
+let base = getStorage
+
 function createTbody (base){
     const tbody = document.querySelector('tbody')
+    tbody.innerHTML = "";
     for (let items of base){
         console.log(items);
         tbody.appendChild (createRow(items.id ,items.prenom, items.nom, items.email, items.role))

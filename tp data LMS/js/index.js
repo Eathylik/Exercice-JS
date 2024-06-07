@@ -1,10 +1,9 @@
-import getData from "./module/getTab.js";
+import user from "./module/getDatas.js";
 
-const searchInput = document.querySelector('#searchInput');
-console.log(searchInput);
+import createTbody from "./module/createTbody.js";
 
-getData()
+const base = await user();
 
-searchInput.addEventListener("keyup", (event) => {
-    console.log(event.target.value);
-} )
+createTbody(base);
+
+

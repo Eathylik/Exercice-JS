@@ -56,7 +56,7 @@ table{
 .recherche {
     display: flex;
     justify-content: center;
-    gap: 1em;
-    font-size: 20px;
+    font-size: 30px;
     font-family: "Bebas Neue", sans-serif;
+    gap: 2em;
 }

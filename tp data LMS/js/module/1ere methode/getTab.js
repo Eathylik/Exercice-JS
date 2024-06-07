@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////
             // Try Yourself //
 
-import { storage, getStorage } from "./storage.js";
+import { storage, getStorage } from "../storage.js";
 
             async function getData() {
                 const tbody = document.querySelector('tbody')
